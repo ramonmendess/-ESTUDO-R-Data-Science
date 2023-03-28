@@ -1,0 +1,27 @@
+---
+Formação Cientista de Dados - Prof. Fernando Amaral
+Tabelas
+(Instalação de Package stargazer - Gerar tabela em formato LaTex - Formato HTML - Txt - Salvar no Disco)
+---
+
+```{r}
+install.packages("stargazer")
+library(stargazer)
+```
+Formato Latex
+```{r}
+stargazer(iris)
+```
+Html
+```{r}
+stargazer(iris, type="html")
+```
+Texto
+```{r}
+stargazer(iris, type="text")
+```
+Salva em Disco
+```{r}
+stargazer(women, out="women.tex", summary=FALSE)
+```
+
