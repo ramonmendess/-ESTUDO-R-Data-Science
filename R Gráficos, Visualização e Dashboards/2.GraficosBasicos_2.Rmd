@@ -1,6 +1,7 @@
 ---
-Formação Cientista de Dados - Prof. Fernando Amaral
+Formação Cientista de Dados 
 Gráficos Básicos - Continuação
+
 (Gráfico de caixa (boxplot) padrão do R - Notch (entalhe no gráfico boxplot) - Vários gráficos - 
 Agregação para leitura de gráficos específicos - Gráfico de barra (barplot) - Gráfico de Setor(pie) -
 Gráfico de Setor com legenda )

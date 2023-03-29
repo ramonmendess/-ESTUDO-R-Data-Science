@@ -8,7 +8,7 @@ Tratamento... Preenchimento de NAs(valores faltantes), Padronização de Dados c
 
 ```{r}
 #importa dados, string vazio como NA, string como fatores
-dados = read.csv("Tempo.csv", sep = ";", na.strings="", stringsAsFactors=T)
+dados = read.csv('Tempo.csv', sep = ";", na.strings="", stringsAsFactors=T)
 head(dados)
 summary(dados)
 ```

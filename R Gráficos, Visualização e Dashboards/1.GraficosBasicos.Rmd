@@ -1,5 +1,5 @@
 ---
-Formação Cientista de Dados - Prof. Fernando Amaral
+Formação Cientista de Dados 
 Gráficos Básicos
 (Não é necessário importação, Dados inclusos no R - Histograma padrão do R - Leitura de densidade padrão - 
 Sobreposição densidade/histograma por parâmetro par(new) - Gráfico de dispersão padrão - Gráfico de 

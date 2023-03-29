@@ -1,6 +1,7 @@
 ---
-Formação Cientista de Dados - Prof. Fernando Amaral
+Formação Cientista de Dados 
 Lattice
+
 (Utilizar o package lattice - Gráfico de caixa bwplot(lattice) - Histograma histogram(lattice) -
 histograma condicional por meio de Agregação - Gráfico de Dispersão Condicional xyplot(lattice) -
 Gráfico de Dispersão Categórico dotplot(lattice) - Matriz de Dispersão splom(lattice) - Densidade

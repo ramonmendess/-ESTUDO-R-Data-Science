@@ -1,5 +1,5 @@
 ---
-Formação Cientista de Dados - Prof. Fernando Amaral
+Formação Cientista de Dados 
 Pequenas e Grandes Amostras
 
 Comparação de pequenas e grandes amostras, no que diz respeito a interferência pelo acaso

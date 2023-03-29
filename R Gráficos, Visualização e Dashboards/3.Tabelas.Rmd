@@ -1,7 +1,9 @@
 ---
-Formação Cientista de Dados - Prof. Fernando Amaral
+Formação Cientista de Dados 
 Tabelas
-(Instalação de Package stargazer - Gerar tabela em formato LaTex - Formato HTML - Txt - Salvar no Disco)
+
+(Instalação de Package stargazer - 
+Gerar tabela em formato LaTex - Formato HTML - Txt - Salvar no Disco)
 ---
 
 ```{r}

@@ -1,6 +1,7 @@
 ---
 Formação Cientista de Dados 
 Amostragem Simples
+
 1 - Amostra simples de 150 de 0 e 1 + replace TRUE + Prob igual -
 2 - Amostra simples de 150 de 0 e 1 + replace TRUE + Prob Diferentes
 3 - Amostra simples de 150 de 0 a 1000 + replace FALSE 

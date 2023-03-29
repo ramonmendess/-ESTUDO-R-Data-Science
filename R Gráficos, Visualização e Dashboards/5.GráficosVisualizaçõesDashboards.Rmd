@@ -1,7 +1,9 @@
 ---
 Formação Cientista de Dados
 Gráficos - Visualização e Dashboards
-(Utilização do package RColorBrewer - Importação de dados csv - Visulização de gráficos do tipo box e hist - 
+
+(Utilização do package RColorBrewer - Importação de dados csv -
+ Visulização de gráficos do tipo box e hist - 
 Geração de Gráfico de barra com degrade em cores e legenda)
 ---
 
@@ -14,7 +16,7 @@ library("RColorBrewer")
 
 
 ```{r}
-dados = read.csv('C:/Users/ramon/OneDrive/Desktop/R Data Science/R Gráficos, Visualização e Dashboards/dados.csv', sep=";")
+dados = read.csv('dados.csv', sep=";")
 head(dados)
 ```
 
