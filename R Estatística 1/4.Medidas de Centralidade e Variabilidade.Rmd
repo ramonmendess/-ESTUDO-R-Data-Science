@@ -1,0 +1,42 @@
+---
+Formação Cientista de Dados - Prof. Fernando Amaral
+Medidas de Centralidade e Variabilidade
+
+1 - Criado variável em array, onde cada valor é o sálario de um jogador
+2 - Média dos salário dos jogadores. ( Média pode sofrer influencia de Outliers) - Não confiável
+3 - Mediana dos sálarios dos jogadores. ( Mediana não sofre alteração influência de Outliers) - sendo um parâmetro confiável,
+antes e depois da limpeza dos dados ) 
+4 - Quartis dos salários dos Jogadores. Separação dos dados em 4 setores(25% 50%(mediana) 75% 100%)
+5 - Desvio padrão 
+6 - summary - resumo
+---
+Medidas de Centralidade e Variabilidade
+Dados dos jogadores
+```{r}
+jogadores = c(40000,18000,12000,250000,30000,140000,300000,40000,800000)
+```
+Média
+```{r}
+mean(jogadores)
+```
+Mediana
+```{r}
+median(jogadores)
+```
+Quartis
+```{r}
+quartis  = quantile(jogadores)
+quartis
+```
+3º quartil
+```{r}
+quartis[4]
+```
+Desvio padrão
+```{r}
+sd(jogadores)
+```
+Resumo
+```{r}
+summary(jogadores)
+```

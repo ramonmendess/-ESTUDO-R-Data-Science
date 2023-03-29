@@ -1,0 +1,46 @@
+---
+Formação Cientista de Dados - Prof. Fernando Amaral
+Amostragem Estratificada
+
+(Utilização do package sampling)
+1 - Proporção(parâmetro)
+2 - criação de variável chamada amostrairis2. Onde é tirada do arquivo iris, coluna Species, atribuido a 
+a proporção 25, repetidamente para 3 categorias da coluna Species. Seguinto o método - srswor(amostra simples sem reposição)
+3 - Sumário da nova variável - amostrairis2
+4 - criação de variável chamada amostra. Gerada a partir do arquivo Infert, coluna Education, na propoorção 5,48,47 para cada
+dado categórico da coluna Education. Utilizando do método - srswor(amostra simples sem reposição)   
+---
+Amostragem Estratificada
+```{r}
+install.packages("sampling")
+library("sampling")
+```
+Proporção
+```{r}
+propocao = 25
+```
+Srswor amostra simples sem reposição, srswr com reposição, poisson, systematic
+a ordem de size é que está no conjunto de dados
+```{r}
+amostrairis2=strata(data=iris,
+                    stratanames=c("Species"),size=c(rep( propocao,3)), method="srswor")
+```
+Resultado
+```{r}
+summary(amostrairis2)
+```
+Dados de infertilidade
+```{r}
+infert
+summary(infert)
+```
+Amostragem por estratos de education
+```{r}
+amostra=strata(data=infert,
+               stratanames=c("education"),size=c(5,48,47), method="srswor")
+```
+Resultado
+```{r}
+amostra
+summary(amostra)
+```

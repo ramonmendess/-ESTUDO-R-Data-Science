@@ -1,0 +1,72 @@
+---
+Formação Cientista de Dados - Prof. Fernando Amaral
+Testes de Normalidade
+
+1 - Criação de Semente 
+2 - Criação de variável x, que recebe mil varáveis normalmente distribuidas 
+3 - Gráfico Q-Q (quantile-quantile)
+4 - Teste de Shapiro (avalia se uma amostra de dados segue ou não uma distribuição normal) 
+Valor de p acima de 0,05, não há indício para a não confirmar a hipótese nula de dados normalmente distribuidos
+5 - Sobreposição- Histograma com linha de densidade
+6 - O código gera um conjunto de dados não normais usando a função mvrnonnorm() com uma amostra de tamanho 1000, média 1 e 2, 
+matriz de covariância [10, 2; 2, 5], e assimetria 5 e curtose 3.
+Em seguida, é criado um gráfico Quantile-Quantile (QQ plot) para verificar a normalidade dos dados usando a função qqnorm() e qqline(). 
+O qqnorm() plota os quantis teóricos esperados de uma distribuição normal versus os quantis observados dos dados, enquanto qqline() 
+adiciona uma linha de referência ao gráfico para facilitar a comparação. Se os pontos no gráfico seguem aproximadamente a linha de referência, 
+então os dados são considerados aproximadamente normais.
+7 - Teste de Shapiro (m)
+8 - Sobreposição - Histograma com linha de densidade (m)
+---
+Testes de Normalidade
+Repetir o experimento
+```{r}
+set.seed(123)
+```
+Gera mil variáveis normalmente distribuidas
+```{r}
+x = rnorm(1000)
+```
+Gráfico QQ
+```{r}
+#rodar com Ctrl+shift+enter
+qqnorm(x)
+#linha
+qqline(x)
+```
+Teste de Shapiro
+Valor de p acima de 0,05, não há indício para a não confirmar a hipótese nula de dados normalmente distribuidos
+```{r}
+shapiro.test(x) 
+```
+Histograma com linha de densidade
+```{r}
+#rodar com Ctrl+shift+enter
+hist(x, main="")
+par(new=TRUE)
+plot(density(x),ylab = "", xlab = "", axes=F, lwd=2.5 ) 
+```
+Dados não normalmente distribuidos
+```{r}
+#rodar com Ctrl+shift+enter
+#install.packages("semTools")
+library(semTools)
+m = mvrnonnorm(1000, c(1, 2), matrix(c(10, 2, 2, 5), 2, 2),
+                 skewness = c(5, 2), kurtosis = c(3, 3))
+qqnorm(m)
+qqline(m)
+```
+
+
+```{r}
+shapiro.test(m)
+```
+
+
+```{r}
+#rodar com Ctrl+shift+enter
+hist(m, main="")
+par(new=TRUE)
+plot(density(m),ylab = "", xlab = "", axes=F, lwd=2.5 ) 
+```
+
+
